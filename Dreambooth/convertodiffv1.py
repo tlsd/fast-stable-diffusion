@@ -1033,7 +1033,7 @@ def save_diffusers_checkpoint(v2, output_dir, text_encoder, unet, vae=None):
       text_encoder=text_encoder,
       vae=vae,
       scheduler=scheduler,
-      tokenizer=CLIPTokenizer.from_pretrained("/content/refmdl", subfolder="tokenizer"),
+      tokenizer=CLIPTokenizer.from_pretrained("/tmp/DreamBooth/refmdl", subfolder="tokenizer"),
   )
   pipeline.save_pretrained(output_dir)
 
